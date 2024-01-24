@@ -15,7 +15,19 @@ public class JUnitLab {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       System.out.println("hola");
+        Pila miPila = new Pila();
+
+        miPila.push(123);
+        miPila.push(456);
+        miPila.push(789);
+        miPila.push(12);
+
+        miPila.imprimirPila();
+
+        System.out.println("Top de la pila: " + miPila.top());
+        System.out.println("Pop de la pila: " + miPila.pop());
+
+        miPila.imprimirPila();
      }
     
 }
